@@ -11,7 +11,7 @@ const Intro2 = ({ sliderRef }) => {
           <div className="col-lg-6 valign">
             <div className="cont md-mb50">
               <div className="sub-title mb-5">
-                <h6>PixelPort Software Solutions</h6>
+                <h6>PixelPort Software Solutions <3 </h6>
               </div>
               <h1 className="mb-10 fw-600">Elevate your Business with us.</h1>
               <p>
