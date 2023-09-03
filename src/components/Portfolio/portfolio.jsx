@@ -58,7 +58,7 @@ const Portfolio = ({ grid, filterPosition }) => {
               data-wow-delay=".4s"
             >
               <div className="item-img">
-                <a href='https://lagueslo.com' target="_blank" className="imago wow">
+                <a  rel="noreferrer" href='https://lagueslo.com' target="_blank" className="imago wow">
                     <img src="/img/lagueslooo.png" alt="image" />
                     <div className="item-img-overlay"></div>
                   </a>
@@ -82,7 +82,7 @@ const Portfolio = ({ grid, filterPosition }) => {
             >
               <div className="item-img">
                 {/* <Link href={`https://vegasgt.com`}> */}
-                  <a href='https://vegasgt.com' target="_blank" className="imago wow">
+                  <a  rel="noreferrer" href='https://vegasgt.com' target="_blank" className="imago wow">
                     <img  src="/img/VegasGT_LOGO.png" alt="image" />
                     <div className="item-img-overlay"></div>
                   </a>
