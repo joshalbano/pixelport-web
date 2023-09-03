@@ -1,0 +1,10 @@
+{
+  "id": 1,
+  "title": "Let's Talk.",
+  "email": "Email@example.com",
+  "phone": "+6395456798",
+  "location": {
+    "first": "Makati City",
+    "second": "Philippines"
+  }
+}
