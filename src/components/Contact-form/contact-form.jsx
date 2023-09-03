@@ -3,6 +3,7 @@ import ContactFromDate from "../../data/sections/form-info.json";
 import { Formik, Form, Field } from "formik";
 import { sendEmail } from "../../api";
 
+
 const ContactForm = () => {
   const messageRef = React.useRef(null);
   function validateEmail(value) {
@@ -29,38 +30,32 @@ const ContactForm = () => {
                   message: "",
                 }}
                 onSubmit={async (values) => {
-                  await sendMessage(500);
-                  alert(JSON.stringify(values, null, 2));
-                  // show message
+                  // await sendMessage(500);
+
+                  // // Reset the values
+
                   sendEmail(values).then(res =>{
-                    messageRef.current.innerText =
-                    "Your Message has been successfully sent. I will contact you soon.";
-                  // Reset the values
-                  values.name = "";
-                  values.email = "";
-                  values.message = "";
-                  // clear message
-                  setTimeout(() => {
-                    messageRef.current.innerText = ''
-                  }, 2000)
+                    values.name = "";
+                    values.email = "";
+                    values.message = "";
+                      messageRef.current.innerText =
+                      "Your Message has been successfully sent. We will contact you soon!";
                   }).catch(err => {
                     messageRef.current.innerText =
-                    "Error sending your concern.";
+                    "There has been an error when sending your concern.";
                   // Reset the values
                   values.name = "";
                   values.email = "";
                   values.message = "";
                   // clear message
-                  setTimeout(() => {
-                    messageRef.current.innerText = ''
-                  }, 2000)
                   })
 
                 }}
               >
                 {({ errors, touched }) => (
                   <Form id="contact-form">
-                    <div className="messages" ref={messageRef}></div>
+                    <div style={{color: '#007BFF'}}className="messages" ref={messageRef}></div>
+                    <br></br>
                     <div className="controls">
                       <div className="form-group">
                         <Field
@@ -80,7 +75,7 @@ const ContactForm = () => {
                           placeholder="Email"
                         />
                         {errors.email && touched.email && (
-                          <div>{errors.email}</div>
+                          <div style={{marginTop: '2%', color: '#FF2E2E'}}>{errors.email}</div>
                         )}
                       </div>
                     </div>
@@ -126,10 +121,10 @@ const ContactForm = () => {
                 </h6>
               </div>
               <div className="social mt-50">
-                <a href="#0" className="icon">
+                <a rel="noreferrer" target="_blank" href="https://www.facebook.com/pixelportph" className="icon">
                   <i className="fab fa-facebook-f"></i>
                 </a>
-                <a href="#0" className="icon">
+                {/* <a href="#0" className="icon">
                   <i className="fab fa-twitter"></i>
                 </a>
                 <a href="#0" className="icon">
@@ -137,7 +132,7 @@ const ContactForm = () => {
                 </a>
                 <a href="#0" className="icon">
                   <i className="fab fa-behance"></i>
-                </a>
+                </a> */}
               </div>
             </div>
           </div>

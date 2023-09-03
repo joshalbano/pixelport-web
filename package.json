@@ -23,6 +23,8 @@
     "react-visibility-sensor": "^5.1.1",
     "sass": "^1.45.0",
     "slick-carousel": "^1.8.1",
+    "sweetalert2": "^11.7.27",
+    "sweetalert2-react-content": "^5.0.7",
     "swiper": "^7.3.0",
     "typewriter-effect": "^2.18.2"
   },

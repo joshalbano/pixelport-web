@@ -25,16 +25,16 @@ const Footer = ({ hideBGCOLOR }) => {
                   <span className="icon pe-7s-mail"></span>
                   <div className="cont">
                     <h6>Email Us</h6>
-                    <p>pixelport@gmail.com</p>
+                    <p>customercare.pixelport.ph@gmail.com</p>
                   </div>
                 </li>
-                <li>
+                {/* <li>
                   <span className="icon pe-7s-call"></span>
                   <div className="cont">
                     <h6>Call Us</h6>
                     <p>+87986451666</p>
                   </div>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
@@ -107,10 +107,10 @@ const Footer = ({ hideBGCOLOR }) => {
                 <img src={appData.lightLogo} alt="" />
               </div>
               <div className="social">
-                <a href="#0">
+              <a rel="noreferrer" target="_blank" href="https://www.facebook.com/pixelportph" className="icon">
                   <i className="fab fa-facebook-f"></i>
                 </a>
-                <a href="#0">
+                {/* <a href="#0">
                   <i className="fab fa-twitter"></i>
                 </a>
                 <a href="#0">
@@ -118,7 +118,7 @@ const Footer = ({ hideBGCOLOR }) => {
                 </a>
                 <a href="#0">
                   <i className="fab fa-youtube"></i>
-                </a>
+                </a> */}
               </div>
               <div className="copy-right">
                 <p>
